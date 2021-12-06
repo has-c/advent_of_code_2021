@@ -8,7 +8,7 @@ def read_in_file(filepath):
     return content
 
 def main(period_len):
-    filepath = r"day_6_puzzle_input.txt"
+    filepath = r"day_6_test_input.txt"
     data = read_in_file(filepath)
 
     #parse data
@@ -33,7 +33,7 @@ def main(period_len):
             fish_pond = np.append(fish_pond, new_fish)
 
         
-        print("Day ", str(day) + " ", fish_pond, " ", len(fish_pond))
+        print("Day ", str(day) + " ", np.unique(fish_pond,return_counts=True), " ", len(fish_pond))
     
 
-main(80)
+main(18)
